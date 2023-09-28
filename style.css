@@ -406,7 +406,7 @@ main{
 }
 
 .mainSection .secondDiv {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     padding: 40px 0 ;
     display: flex;
@@ -506,7 +506,7 @@ main{
     }
 
 .mainSection .aboutSection {
-    margin: 40px 0;
+    margin: 20px 0;
     padding: 22px;
 }
 .mainSection .aboutSection h3 {
