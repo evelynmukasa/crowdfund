@@ -37,14 +37,16 @@
           </div>
         </div>
   
-        <div class="secondDiv container">
-          <div class="backers"><h2>$89,914</h2><span>of $100,000 backed</span></div>
-          <hr class="custom-line">
-          <div class="backers"><h2>5,007</h2><span>total backers</span></div>
-          <hr class="custom-line">
-          <div class="backers"><h2>56</h2><span>days left</span></div>
-          <div class="progress-bar"><div class="progress"></div></div>
-        </div>
+       
+          <div class="secondDiv container">
+            <div class="backers" ><h2 id="totalMoney">$89,914</h2><span>of $1,000,000 backed</span></div>
+            <hr class="custom-line">
+            <div class="backers" ><h2 id="totalBackers">5,007</h2><span>total backers</span></div>
+            <hr class="custom-line">
+            <div class="backers"><h2 id="totalDays">56</h2><span>days left</span></div>
+            <div class="progress-bar"><progress id="file" max="1000000" value="89914"></progress></div>
+          </div>
+       
   
         <section class="aboutSection container">
           <h3>About this project</h3>
@@ -124,7 +126,7 @@
           <p>Enter your pledge</p>
           <div class="d-flex justify-end justify-md-center align-center">
             <span class="dollarSign">$</span>
-            <input type="text">
+            <input type="number" class="offerInput" min="0">
             <button class="primaryBtn">Continue</button>
           </div>
         </form>
@@ -145,7 +147,7 @@
           <p>Enter your pledge</p>
           <div class="d-flex justify-end justify-md-center align-center">
             <span class="dollarSign">$</span>
-            <input type="text">
+            <input type="number" class="offerInput" min="25">
             <button class="primaryBtn">Continue</button>
           </div>
         </form>
@@ -166,7 +168,7 @@
           <p>Enter your pledge</p>
           <div class="d-flex justify-end justify-md-center align-center">
             <span class="dollarSign">$</span>
-            <input type="text">
+            <input type="number" class="offerInput" min="75">
             <button class="primaryBtn">Continue</button>
           </div>
         </form>
@@ -187,7 +189,7 @@
           <p>Enter your pledge</p>
           <div class="d-flex justify-end justify-md-center align-center">
             <span class="dollarSign">$</span>
-            <input type="text">
+            <input type="number" class="offerInput" min="200">
             <button class="primaryBtn">Continue</button>
           </div>
         </form>

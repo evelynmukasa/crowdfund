@@ -70,6 +70,46 @@ body{
 .justify-end{
     justify-content: end ;
 }
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+}
+.align-end{
+    align-items: end;
+}
+.align-start{
+    align-items: start;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.bottom-0{
+    bottom: 0;
+}
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.right-0{
+    right: 0;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+
 .humbergerMenu{
     background: none;
     outline: none;
@@ -426,39 +466,45 @@ main{
         margin: 0 50px;
     }
 }
-
-.progress-bar{
-    position: relative;
-    bottom: 0;
-    width: 85%; 
-    height: 12px;
-    background-color:var(--LightGray); 
-    color: white; 
-    text-align: center;
-    line-height: 20px; 
-    border-radius: 10px; 
-    margin-top: 10px;
-}
-
-.progress{
-    position: absolute;
-    width: 75%;
-    height: 12px;
-    background-color:var(--ModerateCyan); 
-    color: white; 
-    text-align: center;
-    line-height: 20px; 
-    border-radius: 10px;
-    transition: width 0.5s;
-}
-
-@media(min-width:768px){
-    .progress-bar {
-        width: 77%;
-        bottom: 50px;
-        position: absolute;
+    /* Customize the appearance of the progress bar */
+    progress {
+        position: relative;
+        bottom: 0;
+        width: 85%; 
+        height: 12px;
+        background-color:var(--LightGray);
+        border-radius: 10px; 
+        margin-top: 10px;
+        overflow: hidden;
+        border: none;
     }
-}
+    progress::-moz-progress-bar{
+        background-color:var(--ModerateCyan); 
+        border-radius: 10px; 
+        transition: width 0.5s;
+    }
+    progress::-webkit-progress-value{
+        background-color:var(--ModerateCyan); 
+        border-radius: 10px; 
+        transition: width 0.5s;
+    }
+    progress::-webkit-progress-bar {
+        background-color:var(--LightGray);
+      }
+
+    .progress-bar{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    @media(min-width:768px){
+        .progress-bar {
+            width: 77%;
+            bottom: 50px;
+            position: absolute;
+        }
+    }
+
 .mainSection .aboutSection {
     margin: 40px 0;
     padding: 22px;
@@ -762,6 +808,16 @@ main{
     font-weight: bold;
     font-size: 15.5px;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 .modal .modalOffer form .dollarSign {
     position: absolute;
     transform: translate(-1200%); 
